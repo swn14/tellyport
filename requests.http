@@ -1,4 +1,4 @@
-POST https://swn14-tellyport.deno.dev/api/registration/api-key HTTP/1.1
+POST https://tellyport.swn14.deno.net/api/registration/api-key HTTP/1.1
 content-type: application/json
 
 {
@@ -9,16 +9,16 @@ content-type: application/json
 
 GET http://localhost:3000/api/tv/random-episode?seriesId=1447
 Content-Type: application/json
-X-API-Key: c17b242a-ab82-45e9-9ca0-8a79474f875e
+X-API-Key: 6f3bcd16-cd06-4d59-817b-18cad8c5aa81
 
 ###
 
-GET https://sheldonnofe-bramble-scr-68.deno.dev/api/tv/search?query=person of interest
+GET https://tellyport.swn14.deno.net/api/tv/search?query=person of interest
 Content-Type: application/json
-X-API-Key: c17b242a-ab82-45e9-9ca0-8a79474f875e
+X-API-Key: 6f3bcd16-cd06-4d59-817b-18cad8c5aa81
 
 ###
 
-GET https://sheldonnofe-bramble-scr-68.deno.dev/api/tv/random-episode?seriesId=1411
+GET https://tellyport.swn14.deno.net/api/tv/random-episode?seriesId=1411
 Content-Type: application/json
-X-API-Key: c17b242a-ab82-45e9-9ca0-8a79474f875e
+X-API-Key: 6f3bcd16-cd06-4d59-817b-18cad8c5aa81

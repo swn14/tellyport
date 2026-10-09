@@ -28,7 +28,7 @@
 		const response = await fetch(`/api/tv/search?query=${query}&pageNumber=${currentPage}`, {
 			method: 'GET',
 			headers: {
-				'X-Api-Key': 'c5478ad6-9ae6-4060-b604-8aae39f8992f'
+				'X-Api-Key': '6f3bcd16-cd06-4d59-817b-18cad8c5aa81'
 			}
 		});
 		searchResults = await response.json();
@@ -59,7 +59,7 @@
 		const response = await fetch(`/api/tv/random-episode?seriesId=${seriesId}`, {
 			method: 'GET',
 			headers: {
-				'X-Api-Key': 'c5478ad6-9ae6-4060-b604-8aae39f8992f'
+				'X-Api-Key': '6f3bcd16-cd06-4d59-817b-18cad8c5aa81'
 			}
 		});
 		const randomEpisodeResponse: Result<RandomEpisode> = await response.json();
