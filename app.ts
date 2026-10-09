@@ -2,7 +2,7 @@
 import { load } from "https://deno.land/std@0.186.0/dotenv/mod.ts";
 import { getRandomEpisode } from "./use-cases/tv/getRandomEpisode.ts";
 import { searchTvShows } from "./use-cases/tv/searchTvShows.ts";
-import { Application, Router } from "https://deno.land/x/oak/mod.ts";
+import { Application, Router } from "https://deno.land/x/oak@v17.1.4/mod.ts";
 import { rateLimitMiddleware } from "./middleware/rateLimit.ts";
 import { apiKeyMiddleware } from "./middleware/apiKey.ts";
 import { createApiKey } from "./use-cases/registration/createApiKey.ts";
@@ -10,7 +10,7 @@ import process from "node:process";
 
 // Load environment variables
 const env = await load();
-const PORT = parseInt(env.PORT) || 3000;
+const PORT = parseInt(env.PORT ?? Deno.env.get("PORT") ?? "") || 3000;
 
 if (env.ENVIRONMENT === "local") {
   process.env.DENO_KV_ACCESS_TOKEN = env.DENO_KV_ACCESS_TOKEN;
